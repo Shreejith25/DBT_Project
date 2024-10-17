@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: books  # Name of your source
+    database: company  # Your MySQL database name
+    schema: company # Your MySQL schema (usually your database name in MySQL)
+    tables:
+      - name: tbl_book  # Name of your source table
+        description: "Book details"  # Optional description
+      - name: tbl_book_authors  # Name of your source table
+        description: "author details"  # Optional description
+      - name: tbl_book_copies  # Name of your source table
+        description: "copies details"  # Optional description
+      - name: tbl_book_loans  # Name of your source table
+        description: "book loaned details"  # Optional description
+      - name: tbl_borrower # Name of your source table
+        description: "borrower details"  # Optional description
+      - name: tbl_library_branch  # Name of your source table
+        description: "Library Branch details"  # Optional description
+      - name: tbl_publisher  # Name of your source table
+        description: "Publisher details"  # Optional description
